@@ -8,6 +8,11 @@ export default function MainScreen({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('DemoAnim') }}>
                 <Text style={styles.text}>Animation</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('DrawerStack') }}>
+                <Text style={styles.text}>Drawer</Text>
+            </TouchableOpacity>
+
         </View>
     )
 }
@@ -23,8 +28,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#272727',
         borderRadius: 15,
         paddingVertical: 10,
-        paddingHorizontal: 60,
-        margin: 10
+        width: 250,
+        margin: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     text: {
         color: 'white'
