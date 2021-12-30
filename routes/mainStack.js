@@ -11,6 +11,15 @@ import EasingAnim from '../screens/EasingAnim';
 import SplashScreen from '../screens/SplashScreen';
 import TabsStack from './tabsStack';
 
+import StyleScreen from '../screens/StyleScreen'
+import FixedDimension from '../screens/FixedDimension';
+import FlexDimension from '../screens/FlexDimension';
+import PercentageDimension from '../screens/PercentageDimension'
+import JustifyContent from '../screens/JustifyContent'
+import Flex from '../screens/Flex'
+import FlexDirection from '../screens/FlexDirection'
+
+
 const Stack = createNativeStackNavigator();
 
 export default function MainStack() {
@@ -25,6 +34,16 @@ export default function MainStack() {
                 <Stack.Screen name="EasingAnim" component={EasingAnim} />
                 <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="TabsStack" component={TabsStack} options={{ headerShown: false }} />
+
+                <Stack.Screen name="StyleScreen" component={StyleScreen} />
+
+                <Stack.Screen name="FixedDimension" component={FixedDimension} />
+                <Stack.Screen name="FlexDimension" component={FlexDimension} />
+                <Stack.Screen name="PercentageDimension" component={PercentageDimension} />
+
+                <Stack.Screen name="Flex" component={Flex} />
+                <Stack.Screen name="FlexDirection" component={FlexDirection} />
+                <Stack.Screen name="JustifyContent" component={JustifyContent} />
             </Stack.Navigator>
         </NavigationContainer>
     );
