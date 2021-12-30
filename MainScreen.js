@@ -13,6 +13,11 @@ export default function MainScreen({ navigation }) {
                 <Text style={styles.text}>Drawer</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('TabsStack') }}>
+                <Text style={styles.text}>Tabs</Text>
+            </TouchableOpacity>
+
+
         </View>
     )
 }

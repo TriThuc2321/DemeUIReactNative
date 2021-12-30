@@ -9,6 +9,7 @@ import AnimParallel from '../screens/AnimParallel';
 import DrawerStack from './drawerStack';
 import EasingAnim from '../screens/EasingAnim';
 import SplashScreen from '../screens/SplashScreen';
+import TabsStack from './tabsStack';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ export default function MainStack() {
                 <Stack.Screen name="AnimParallel" component={AnimParallel} />
                 <Stack.Screen name="EasingAnim" component={EasingAnim} />
                 <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="TabsStack" component={TabsStack} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
