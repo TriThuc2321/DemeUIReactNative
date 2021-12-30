@@ -5,14 +5,14 @@ export default function MainScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <ScrollView>
-                <Text style = {{...styles.title, fontSize: 25, textAlign: 'center', padding: 20}}>UI React Native</Text>
+                <Text style={{ ...styles.title, fontSize: 25, textAlign: 'center', padding: 20 }}>UI React Native</Text>
 
-                <Text style = {styles.title}>Style</Text>
+                <Text style={styles.title}>Style</Text>
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('StyleScreen') }}>
                     <Text style={styles.text}>Style</Text>
                 </TouchableOpacity>
 
-                <Text style = {styles.title}>Height - Width</Text>
+                <Text style={styles.title}>Height - Width</Text>
 
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('FixedDimension') }}>
                     <Text style={styles.text}>Fixed Dimension</Text>
@@ -26,7 +26,7 @@ export default function MainScreen({ navigation }) {
                     <Text style={styles.text}>Percentage Dimension</Text>
                 </TouchableOpacity>
 
-                <Text style = {styles.title}>FlexBox</Text>
+                <Text style={styles.title}>FlexBox</Text>
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Flex') }}>
                     <Text style={styles.text}>Flex</Text>
                 </TouchableOpacity>
@@ -39,12 +39,12 @@ export default function MainScreen({ navigation }) {
                     <Text style={styles.text}>Justify Content</Text>
                 </TouchableOpacity>
 
-                <Text style = {styles.title}>Animation</Text>
+                <Text style={styles.title}>Animation</Text>
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('DemoAnim') }}>
                     <Text style={styles.text}>Animation</Text>
                 </TouchableOpacity>
 
-                <Text style = {styles.title}>Drawer</Text>
+                <Text style={styles.title}>Navigators</Text>
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('DrawerStack') }}>
                     <Text style={styles.text}>Drawer</Text>
                 </TouchableOpacity>
@@ -72,11 +72,11 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white'
-    }, 
+    },
     title: {
         fontWeight: 'bold',
-        justifyContent:'center',
+        justifyContent: 'center',
         color: 'black'
     }
-    
+
 });

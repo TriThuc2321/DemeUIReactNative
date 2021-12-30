@@ -3,16 +3,16 @@ import { Text, View, Button, StyleSheet, TouchableOpacity } from 'react-native';
 
 const StyleScreen = () => {
     return (
-        <View style = {styles.container}>
+        <View style={styles.container}>
             <Text style={{
                 color: 'black',
-                fontSize: '20',
+                fontSize: 20,
                 fontWeight: 'bold'
             }}>Hello</Text>
 
             <Text style={{
                 color: 'blue',
-                fontSize: '18',
+                fontSize: 18,
                 fontStyle: 'italic'
             }}>Hello</Text>
 
