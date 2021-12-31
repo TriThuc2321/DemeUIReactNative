@@ -4,8 +4,8 @@ import { Text, View, Button, StyleSheet, TouchableOpacity, ScrollView } from 're
 export default function MainScreen({ navigation }) {
     return (
         <View style={styles.container}>
-            <ScrollView>
-                <Text style={{ ...styles.title, fontSize: 25, textAlign: 'center', padding: 20 }}>UI React Native</Text>
+            <ScrollView style={{ paddingHorizontal: 30 }}>
+                <Text style={{ ...styles.title, fontSize: 25, textAlign: 'center', padding: 20, marginTop: 40 }}>UI React Native</Text>
 
                 <Text style={styles.title}>Style</Text>
                 <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('StyleScreen') }}>
@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 20
     },
     button: {
         backgroundColor: '#272727',
